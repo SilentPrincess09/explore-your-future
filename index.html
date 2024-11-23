@@ -4,20 +4,53 @@
     <style>
         .button
         {
-            border: none;
+            background-color: blue;
+            border: 4 px solid #0000FF;
+            border-radius: 8px;
             color:white;
-            padding:15px32 px;
+            padding:15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
         }
+        .button:hover
+        {
+            background-color: #FFFFFF;
+            color: blue;
+        }
+
+        .container
+        {
+            height: 200px;
+            position: relative;
+            border: 3px black;
+        }
+
+        .center
+        {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
     </style>
+
     <body>
         <title>Career Hub</title>
-        <h1 style="color:aqua; font-size:300%; text-align:center;">Explore Your Future  &#128522;</h1>
-        <button style="color:gold; font-size:300%; text-align:center;">Click </button>
+        <h1 style="color:aqua; font-size:300%; text-align:center;">Career Hub  &#128522;</h1>
+
+        <div class="container">
+            <div class = "center">
+                <button class="button">Explore your future</button>
+            </div>
+        </div>
 
     </body>
 </html> 
