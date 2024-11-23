@@ -38,11 +38,22 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+        .container2
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
     </style>
 
-    <blockquote>“Choose a job you love, and you will never have to work a day in your life." —Confucius" - Yogi Berra</blockquote>
-    <button onclick="changeQuote()">Change Quote</button>
+    <blockquote>“Choose a job you love, and you will never have to work a day in your life." —Confucius"</blockquote>
+    <div class="container">
+        <div class = "center">
+            <button onclick="changeQuote()">Change Quote</button>
+        </div>
+    </div>
+
 
     <script>
         var index = 0;
@@ -67,12 +78,21 @@
 
 
     </script>
-
     <body style="background-color: orange;">
-
         <title>Career Hub</title>
-        <h1 style="color:aqua; font-size:300%; text-align:center;">Career Hub  &#128522;</h1>
-        <img src="R.98e1f79ea06d66406f43efe2ca16fac8 (900×600)">
+
+        <style> 
+            img{
+                width: 500px;
+                height: auto;
+            }
+        </style>
+
+        <div class = "container2">
+            <h1 style="color:aqua; font-size:300%; position: relative; text-align: center;"> Career Hub  &#128522 </h1>
+            <img src="https://news.umanitoba.ca/wp-content/uploads/2021/10/Career-Month-1_Drupal-1200x799.png" class ="center">
+        </div>
+
 
 
         <div class="container">
@@ -82,6 +102,8 @@
                 </a>
             </div>
         </div>
+
+
 
     </body>
 </html> 
